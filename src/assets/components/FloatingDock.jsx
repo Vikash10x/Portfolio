@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useState } from "react";
-import BrightnessToggle from "./Brightness_btn";
+import ToggleTheme from "./ToggleTheme";
 
 import {
   motion,
@@ -31,7 +31,7 @@ const FloatingDockDesktop = ({ items }) => {
       ))}
       <div className="w-[1px] h-8 border border-[#e5e7eb] bg-gray-600"></div>
       <div className=" hover:bg-gray-200 rounded-full duration-200 dark:hover:bg-[#3d40466c]">
-        <BrightnessToggle />
+        <ToggleTheme />
       </div>
     </motion.div>
   );

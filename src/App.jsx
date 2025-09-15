@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import React from "react";
 import "./App.css";
 import { motion } from "framer-motion";
@@ -6,17 +7,34 @@ import { About_me } from "./assets/components/About_me";
 import { Education } from "./assets/components/Education";
 import { Skills } from "./assets/components/Skills";
 import { Project } from "./assets/components/Project";
-import { Email } from "./assets/components/Email";
 import { Footer } from "./assets/components/Footer";
+import { Email } from "./assets/components/Email";
 
 function App() {
+  const first = useRef();
+  const [darkMode, setDarkMode] = useState(false);
+
+  const Togglebtn = () => {
+    const toggleDarkMode = () => {
+      if (darkMode) {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        setDarkMode(false);
+      } else {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        setDarkMode(true);
+      }
+    };
+  };
+
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-500">
+    <div className="raf={raf}  min-h-screen bg-white dark:bg-black dark:text-gray-100 transition-colors duration-500">
       <motion.div
         initial={{ filter: "blur(20px)", opacity: 0 }}
         animate={{ filter: "blur(0px)", opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="bg-white dark:bg-black min-h-screen max-w-2xl mx-auto font-sans pt-15 pb-40 px-6"
+        className="min-h-screen max-w-2xl mx-auto font-sans pt-15 pb-40 px-6"
       >
         <Navbar />
         <About_me />

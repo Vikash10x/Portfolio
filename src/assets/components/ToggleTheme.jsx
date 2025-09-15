@@ -1,10 +1,9 @@
 import React from "react";
 import { MdBrightness3 } from "react-icons/md";
 import { BsBrightnessHigh } from "react-icons/bs";
-
 import { useState, useEffect } from "react";
 
-export default function BrightnessToggle() {
+export default function ToggleTheme() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
