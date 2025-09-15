@@ -10,15 +10,19 @@ import {
   useTransform,
 } from "framer-motion";
 
-export const FloatingDock = ({ items, desktopClassName }) => {
+export const FloatingDock = ({ items, desktopClassName, toggleDarkMode }) => {
   return (
     <>
-      <FloatingDockDesktop items={items} className={desktopClassName} />
+      <FloatingDockDesktop
+        items={items}
+        className={desktopClassName}
+        toggleDarkMode={toggleDarkMode}
+      />
     </>
   );
 };
 
-const FloatingDockDesktop = ({ items }) => {
+const FloatingDockDesktop = ({ items, toggleDarkMode }) => {
   let mouseX = useMotionValue(Infinity);
   return (
     <motion.div
@@ -31,7 +35,7 @@ const FloatingDockDesktop = ({ items }) => {
       ))}
       <div className="w-[1px] h-8 border border-[#e5e7eb] bg-gray-600"></div>
       <div className=" hover:bg-gray-200 rounded-full duration-200 dark:hover:bg-[#3d40466c]">
-        <ToggleTheme />
+        <ToggleTheme toggleDarkMode={toggleDarkMode} />
       </div>
     </motion.div>
   );

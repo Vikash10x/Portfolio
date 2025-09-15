@@ -14,22 +14,21 @@ function App() {
   const first = useRef();
   const [darkMode, setDarkMode] = useState(false);
 
-  const Togglebtn = () => {
-    const toggleDarkMode = () => {
-      if (darkMode) {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-        setDarkMode(false);
-      } else {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        setDarkMode(true);
-      }
-    };
+  const toggleDarkMode = () => {
+    if (darkMode) {
+      first.current.classList.remove("dark");
+      setDarkMode(false);
+    } else {
+      first.current.classList.add("dark");
+      setDarkMode(true);
+    }
   };
 
   return (
-    <div className="raf={raf}  min-h-screen bg-white dark:bg-black dark:text-gray-100 transition-colors duration-500">
+    <div
+      ref={first}
+      className="min-h-screen bg-white dark:bg-black dark:text-gray-100 transition-colors duration-500"
+    >
       <motion.div
         initial={{ filter: "blur(20px)", opacity: 0 }}
         animate={{ filter: "blur(0px)", opacity: 1 }}
@@ -45,7 +44,7 @@ function App() {
       </motion.div>
 
       <div className="fixed bottom-5 w-full">
-        <Footer />
+        <Footer toggleDarkMode={toggleDarkMode} />
       </div>
     </div>
   );
