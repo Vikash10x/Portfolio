@@ -29,7 +29,7 @@ const data = [
   {
     img: "Images/card4.png",
     heading: "Y Combinator",
-    desc: "A responsive Y Combinator website clone built with modern frontend technologies.Focused on clean UI, smooth navigation, and pixel-perfect design.Showcases my skills in frontend development and attention to detail.",
+    desc: "Y Combinator website clone built with modern frontend technologies.Focused on clean UI, smooth navigation, and pixel-perfect design.Showcases my skills in frontend development and attention to detail.",
     lang: ["HTML", "CSS"],
     website: "https://y-combinator.vercel.app/",
     // source: "https://github.com/Vikash10x/Y-Combinator",
