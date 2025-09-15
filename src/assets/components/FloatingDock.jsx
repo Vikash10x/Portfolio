@@ -24,13 +24,13 @@ const FloatingDockDesktop = ({ items }) => {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="mx-auto gap-4 border border-[#e5e7eb] rounded-full py-1 px-3 flex dark:bg-neutral-900 items-center bg-[#ffffff] shadow-md"
+      className="mx-auto gap-4 border border-[#e5e7eb] dark:border-none rounded-full py-1 px-3 flex dark:bg-[#262626] items-center bg-[#ffffff] shadow-md cursor-pointer"
     >
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
       ))}
-      <div className="w-[1px] h-8 border border-[#e5e7eb] bg-gray-600 "></div>
-      <div className=" hover:bg-gray-200 rounded-full duration-200">
+      <div className="w-[1px] h-8 border border-[#e5e7eb] bg-gray-600"></div>
+      <div className=" hover:bg-gray-200 rounded-full duration-200 dark:hover:bg-[#3d40466c]">
         <BrightnessToggle />
       </div>
     </motion.div>
@@ -68,7 +68,7 @@ function IconContainer({ mouseX, title, icon, href }) {
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="relative flex aspect-square items-center justify-center rounded-full hover:bg-gray-200 duration-200 dark:bg-neutral-800"
+        className="relative flex aspect-square items-center justify-center rounded-full hover:bg-gray-200 duration-200 dark:hover:bg-[#3d404686]"
       >
         <AnimatePresence>
           {hovered && (
@@ -76,7 +76,7 @@ function IconContainer({ mouseX, title, icon, href }) {
               initial={{ opacity: 0, y: 10, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="absolute -top-7.5 left-1/2 w-fit rounded bg-gray-800 px-3 py-1 text-[12px] whitespace-pre text-white dark:border-neutral-900 dark:bg-neutral-800 dark:text-white"
+              className="absolute -top-7.5 left-1/2 w-fit rounded bg-gray-800 px-3 py-1 text-[11px] whitespace-pre text-white dark:bg-white dark:text-black font-"
             >
               {title}
             </motion.div>

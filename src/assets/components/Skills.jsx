@@ -17,7 +17,7 @@ export const Skills = () => {
         {data.map((item, index) => (
           <button
             key={index}
-            className="bg-black text-white text-[12px] font-bold rounded-[5px] mb-1 px-3 py-0.5 hover:bg-gray-700"
+            className="bg-black text-white text-[12px] font-bold rounded-[5px] mb-1 px-3 py-0.5 hover:bg-gray-700 dark:hover:bg-gray-200 dark:bg-white dark:text-black"
           >
             {item}
           </button>

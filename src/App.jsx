@@ -11,12 +11,12 @@ import { Footer } from "./assets/components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-500">
       <motion.div
         initial={{ filter: "blur(20px)", opacity: 0 }}
         animate={{ filter: "blur(0px)", opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="bg-white dark:bg-neutral-900 min-h-screen max-w-2xl mx-auto font-sans pt-15 pb-40 px-6"
+        className="bg-white dark:bg-black min-h-screen max-w-2xl mx-auto font-sans pt-15 pb-40 px-6"
       >
         <Navbar />
         <About_me />

@@ -14,7 +14,7 @@ const data = [
     img: "Images/card2.png",
     heading: "Todo-List-App",
     desc: "The Todo List App is a lightweight task management tool that allows users to add, edit, mark complete, and delete tasks. It is designed with a clean interface to boost productivity and keep daily activities organized.",
-    lang: ["HTML", "CSS", "JavaScript"],
+    lang: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
     website: "https://todo-list-app-nu-steel.vercel.app/",
     source: "https://github.com/Vikash10x/TodoList-App",
   },
@@ -40,7 +40,7 @@ export const Project = () => {
   return (
     <div className="mt-15">
       <div className="text-center">
-        <button className="bg-black text-white text-center text-[13px] font-bold rounded-[5px] px-4 py-1 mb-2">
+        <button className="bg-black text-white text-center text-[13px] font-bold rounded-[5px] px-4 py-1 mb-2 dark:bg-white dark:text-black">
           My Projects
         </button>
         <h1 className="text-3xl sm:text-5xl font-bold mb-2.5">
@@ -56,9 +56,11 @@ export const Project = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className=" w-full sm:w-[48%] border border-[#e5e7eb] overflow-hidden rounded-[10px] transform transition duration-400 hover:scale-104"
+            className=" w-full sm:w-[48%] border border-[#e5e7eb] overflow-hidden rounded-[10px] transform transition duration-400 hover:scale-104 dark:border-[#e5e7eb2a]"
           >
-            <img className="object-fill" src={item.img} alt="" />
+            <a href={item.website}>
+              <img className="object-fill" src={item.img} alt="" />
+            </a>
 
             <div className="p-2">
               <h2 className="font-bold text-lg">{item.heading}</h2>
@@ -69,7 +71,7 @@ export const Project = () => {
                 {item.lang.map((lang, i) => (
                   <p
                     key={i}
-                    className="bg-gray-100 text-neutral-600 text-[10px] font-bold rounded px-2 py-0.5"
+                    className="bg-gray-100 text-neutral-600 text-[10px] font-bold rounded px-2 py-0.5 dark:bg-[#2c2c2c] dark:text-white"
                   >
                     {lang}
                   </p>
@@ -77,12 +79,12 @@ export const Project = () => {
               </div>
 
               <div className="space-x-2 pt-4 flex">
-                <div className="flex items-center justify-center bg-[#171717] cursor-pointer text-white px-2.5 py-1 rounded-[5px] text-[11px] font-bold gap-1.5 hover:bg-gray-700">
+                <div className="flex items-center justify-center bg-[#171717] cursor-pointer text-white px-2.5 py-1 rounded-[5px] text-[11px] font-bold gap-1.5 hover:bg-gray-700 dark:bg-white dark:text-[#171717] dark:hover:bg-gray-200">
                   <TbWorld />
                   <a href={item.website}>Website</a>
                 </div>
                 {item.source && (
-                  <div className="flex items-center justify-center bg-[#171717] cursor-pointer text-white px-2.5 py-1 rounded-[5px] text-[11px] font-bold gap-1.5 hover:bg-gray-700">
+                  <div className="flex items-center justify-center bg-[#171717] cursor-pointer text-white px-2.5 py-1 rounded-[5px] text-[11px] font-bold gap-1.5 hover:bg-gray-700 dark:bg-white dark:text-black dark:hover:bg-gray-200">
                     <FaGithub />
                     <a href={item.source}>Source</a>
                   </div>

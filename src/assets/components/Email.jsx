@@ -8,7 +8,7 @@ export const Email = () => {
           href="https://mail.google.com/mail/?view=cm&fs=1&to=vvikash0012@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center border border-gray-300 text-gray-600 text-[15px] font-medium rounded-full px-6 py-2 shadow-md hover:shadow-lg hover:bg-gray-100 hover:text-gray-800 transition-all duration-300 mb-3"
+          className="inline-flex items-center border border-gray-300 text-gray-600 text-[15px] font-medium rounded-full px-6 py-2 shadow-md hover:shadow-lg hover:bg-gray-100 hover:text-gray-800 transition-all duration-300 mb-3 dark:bg-white dark:text-black"
         >
           📧 vvikash0012@gmail.com
         </a>
