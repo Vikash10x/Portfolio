@@ -12,7 +12,7 @@ import { Email } from "./assets/components/Email";
 
 function App() {
   const first = useRef();
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     if (darkMode) {
@@ -27,7 +27,7 @@ function App() {
   return (
     <div
       ref={first}
-      className="min-h-screen bg-white dark:bg-black dark:text-gray-100 transition-colors duration-500"
+      className="dark min-h-screen bg-white dark:bg-black dark:text-gray-100 transition-colors duration-500"
     >
       <motion.div
         initial={{ filter: "blur(20px)", opacity: 0 }}
