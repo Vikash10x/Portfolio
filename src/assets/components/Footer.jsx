@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FloatingDock } from "./FloatingDock";
 
-export function Footer({ toggleDarkMode }) {
+export function Footer({ toggleDarkMode, darkMode }) {
   const links = [
     {
       title: "Home",
@@ -35,6 +35,7 @@ export function Footer({ toggleDarkMode }) {
         mobileClassName="translate-y-20"
         items={links}
         toggleDarkMode={toggleDarkMode}
+        darkMode={darkMode}
       />
     </div>
   );

@@ -44,7 +44,7 @@ function App() {
       </motion.div>
 
       <div className="fixed bottom-5 w-full">
-        <Footer toggleDarkMode={toggleDarkMode} />
+        <Footer toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       </div>
     </div>
   );
