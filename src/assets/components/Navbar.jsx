@@ -12,12 +12,11 @@ export const Navbar = () => {
           people | Active on LinkedIn.
         </h4>
       </div>
-      <div>
+      <div className="">
         <img
-          className="w-40 sm:w-45 rounded-[50%]"
-          src="Images/profile.jpg"
+          className="w-40 sm:w-45 rounded-[50%] shadow-lg"
+          src="/Images/profile.jpg"
           alt=""
-          // width={200}
         />
       </div>
     </div>
