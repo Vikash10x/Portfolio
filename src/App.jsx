@@ -9,26 +9,11 @@ import { Skills } from "./assets/components/Skills";
 import { Project } from "./assets/components/Project";
 import { Footer } from "./assets/components/Footer";
 import { Email } from "./assets/components/Email";
+import { ThemeProvider } from "./assets/contexts/theme";
 
 function App() {
-  const first = useRef();
-  const [darkMode, setDarkMode] = useState(true);
-
-  const toggleDarkMode = () => {
-    if (darkMode) {
-      first.current.classList.remove("dark");
-      setDarkMode(false);
-    } else {
-      first.current.classList.add("dark");
-      setDarkMode(true);
-    }
-  };
-
   return (
-    <div
-      ref={first}
-      className="dark min-h-screen bg-white dark:bg-black dark:text-gray-100 transition-colors duration-500"
-    >
+    <ThemeProvider>
       <motion.div
         initial={{ filter: "blur(20px)", opacity: 0 }}
         animate={{ filter: "blur(0px)", opacity: 1 }}
@@ -44,9 +29,9 @@ function App() {
       </motion.div>
 
       <div className="fixed bottom-5 w-full">
-        <Footer toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+        <Footer />
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 
