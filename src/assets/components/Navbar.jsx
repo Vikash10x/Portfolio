@@ -14,7 +14,7 @@ export const Navbar = () => {
       </div>
       <div className="">
         <img
-          className="mt-8 w-45 sm:w-45 sm:mt-0 rounded-[50%] shadow-lg"
+          className="w-47 h-30 rounded-[50%] shadow-lg"
           src="/Images/profile.jpg"
           alt=""
         />
