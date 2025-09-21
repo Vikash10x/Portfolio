@@ -3,7 +3,7 @@ import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 const data = [
   {
-    img: "public/Images/card5.png",
+    img: "Images/card5.png",
     heading: "ICT-Academy",
     desc: "Built a clone of the ACT/ICT Academy site. It replicates core sections like courses, projects, and curriculum. The UI is responsive, interactive, and bridges the gap between industry requirements and learner skills.",
     lang: ["HTML", "JavaScript", "TailwindCSS"],
@@ -34,7 +34,6 @@ const data = [
     website: "https://vikash10x.github.io/Weather-app/",
     source: "https://github.com/Vikash10x/Weather-app",
   },
-  
 
   // {
   //   img: "Images/card2.png",
