@@ -3,22 +3,13 @@ import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 const data = [
   {
-    img: "Images/card1.png",
-    heading: "Weather App",
-    desc: "The Weather App provides real-time updates on any city’s weather, showing accurate temperature and conditions. Its clean and user-friendly design makes daily planning effortless.",
-    lang: ["HTML", "CSS", "JavaScript"],
-    website: "https://vikash10x.github.io/Weather-app/",
-    source: "https://github.com/Vikash10x/Weather-app",
+    img: "public/Images/card5.png",
+    heading: "ICT-Academy",
+    desc: "Built a clone of the ACT/ICT Academy site. It replicates core sections like courses, projects, and curriculum. The UI is responsive, interactive, and bridges the gap between industry requirements and learner skills.",
+    lang: ["HTML", "JavaScript", "TailwindCSS"],
+    website: "https://ict-academy-delta.vercel.app/",
+    source: "https://github.com/Vikash10x/ICT-Academy-",
   },
-  {
-    img: "Images/card4.png",
-    heading: "Y Combinator",
-    desc: "Y Combinator website clone built with modern frontend technologies.Focused on clean UI, smooth navigation, and pixel-perfect design.Showcases my skills in frontend development and attention to detail.",
-    lang: ["HTML", "CSS"],
-    website: "https://y-combinator.vercel.app/",
-    // source: "https://github.com/Vikash10x/Y-Combinator",
-  },
-
   {
     img: "Images/card3.png",
     heading: "Amazon-Clone",
@@ -28,13 +19,31 @@ const data = [
     source: "https://github.com/Vikash10x/Amazon-Clone",
   },
   {
-    img: "Images/card2.png",
-    heading: "Todo-List-App",
-    desc: "The Todo List App is a lightweight task management tool that allows users to add, edit, mark complete, and delete tasks. It is designed with a clean interface to boost productivity and keep daily activities organized.",
-    lang: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
-    website: "https://todo-list-app-nu-steel.vercel.app/",
-    source: "https://github.com/Vikash10x/TodoList-App",
+    img: "Images/card4.png",
+    heading: "Y Combinator",
+    desc: "Y Combinator website clone built with modern frontend technologies.Focused on clean UI, smooth navigation, and pixel-perfect design.Showcases my skills in frontend development and attention to detail.",
+    lang: ["HTML", "CSS"],
+    website: "https://y-combinator.vercel.app/",
+    source: "https://github.com/Vikash10x/Y-Combinator",
   },
+  {
+    img: "Images/card1.png",
+    heading: "Weather App",
+    desc: "The Weather App provides real-time updates on any city’s weather, showing accurate temperature and conditions. Its clean and user-friendly design makes daily planning effortless.",
+    lang: ["HTML", "CSS", "JavaScript"],
+    website: "https://vikash10x.github.io/Weather-app/",
+    source: "https://github.com/Vikash10x/Weather-app",
+  },
+  
+
+  // {
+  //   img: "Images/card2.png",
+  //   heading: "Todo-List-App",
+  //   desc: "The Todo List App is a lightweight task management tool that allows users to add, edit, mark complete, and delete tasks. It is designed with a clean interface to boost productivity and keep daily activities organized.",
+  //   lang: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
+  //   website: "https://todo-list-app-nu-steel.vercel.app/",
+  //   source: "https://github.com/Vikash10x/TodoList-App",
+  // },
 ];
 
 export const Project = () => {
