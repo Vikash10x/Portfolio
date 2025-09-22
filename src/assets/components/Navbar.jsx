@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 items-center">
       <div>
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-1">
           Hi, I'm Vikash 👋
@@ -12,8 +12,12 @@ export const Navbar = () => {
           people | Active on LinkedIn.
         </h4>
       </div>
-      <div className="w-45 h-30 rounded-full overflow-hidden">
-        <img className="object-cover" src="/Images/profile.webp" alt="" />
+      <div className="min-w-25 h-25 rounded-full overflow-hidden">
+        <img
+          className="object-fill object-center w-full h-full"
+          src="/Images/profile.webp"
+          alt=""
+        />
       </div>
     </div>
   );
