@@ -3,7 +3,7 @@ import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 const data = [
   {
-    img: "Images/card5.png",
+    img: "Images/card_1.png",
     heading: "ICT-Academy",
     desc: "Built a clone of the ACT/ICT Academy site. It replicates core sections like courses, projects, and curriculum. The UI is responsive, interactive, and bridges the gap between industry requirements and learner skills.",
     lang: ["HTML", "JavaScript", "TailwindCSS"],
@@ -11,7 +11,7 @@ const data = [
     source: "https://github.com/Vikash10x/ICT-Academy-",
   },
   {
-    img: "Images/card3.png",
+    img: "Images/card_2.webp",
     heading: "Amazon-Clone",
     desc: "The Amazon Clone replicates the core shopping experience with product listings, cart, and checkout functionality. It features a clean, responsive UI and smooth navigation, offering an e-commerce feel similar to the original platform.",
     lang: ["HTML", "CSS", "JavaScript"],
@@ -19,7 +19,7 @@ const data = [
     source: "https://github.com/Vikash10x/Amazon-Clone",
   },
   {
-    img: "Images/card4.png",
+    img: "Images/card_3.png",
     heading: "Y Combinator",
     desc: "Y Combinator website clone built with modern frontend technologies.Focused on clean UI, smooth navigation, and pixel-perfect design.Showcases my skills in frontend development and attention to detail.",
     lang: ["HTML", "CSS"],
@@ -27,7 +27,7 @@ const data = [
     source: "https://github.com/Vikash10x/Y-Combinator",
   },
   {
-    img: "Images/card1.png",
+    img: "Images/card_4.png",
     heading: "Weather App",
     desc: "The Weather App provides real-time updates on any city’s weather, showing accurate temperature and conditions. Its clean and user-friendly design makes daily planning effortless.",
     lang: ["HTML", "CSS", "JavaScript"],

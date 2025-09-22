@@ -12,12 +12,8 @@ export const Navbar = () => {
           people | Active on LinkedIn.
         </h4>
       </div>
-      <div className="">
-        <img
-          className="mt-3 sm:mt-0 w-70 sm:w-47 sm:h-30 rounded-[50%] shadow-lg"
-          src="/Images/profile.jpg"
-          alt=""
-        />
+      <div className="w-45 h-30 rounded-full overflow-hidden">
+        <img className="object-cover" src="/Images/profile.webp" alt="" />
       </div>
     </div>
   );
