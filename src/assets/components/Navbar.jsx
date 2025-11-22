@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className="min-w-25 h-25 rounded-full overflow-hidden">
         <img
           className="object-fill object-center w-full h-full"
-          src="/Images/profile.webp"
+          src="https://media.licdn.com/dms/image/v2/D5603AQHkYuvrSgYdnw/profile-displayphoto-scale_400_400/B56ZqrkwtaHIAg-/0/1763815138515?e=1765411200&v=beta&t=W9VhNyiD99Tq-5Nm9luufSImDFw0vfry-9YgK1-T3rE"
           alt=""
         />
       </div>

@@ -16,8 +16,8 @@ export const Email = () => {
         <h1 className="text-3xl sm:text-5xl font-bold mb-3">Get in Touch</h1>
         <h5 className="text-[18px] md:text-xl opacity-50">
           Want to chat? Just shoot me a dm&nbsp;&nbsp;
-          <a className="text-[#4b8cf7]" href="https://x.com/vikashkumawattt">
-            with a direct question on twitter&nbsp;&nbsp;
+          <a className="text-[#4b8cf7]" href="https://www.linkedin.com/in/vikash-kumawat-186a01290/">
+            with a direct question on linkedin&nbsp;&nbsp;
           </a>
           and I'll respond whenever I can. I will ignore all soliciting.
         </h5>

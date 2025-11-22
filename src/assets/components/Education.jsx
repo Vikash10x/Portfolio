@@ -9,7 +9,7 @@ export const Education = () => {
         <div>
           <img
             className="rounded-full"
-            src="https://media.licdn.com/dms/image/v2/C4E0BAQE15MzIdWxf2g/company-logo_100_100/company-logo_100_100/0/1631317435376?e=1762992000&v=beta&t=SAAVY6xYAbGID7KbLlvBoZDH_TDb_2acMIApEQkOWZ0"
+            src="https://media.licdn.com/dms/image/v2/C4E0BAQE15MzIdWxf2g/company-logo_100_100/company-logo_100_100/0/1631317435376?e=1765411200&v=beta&t=FsadbaSg0Uwa60mwSlNOY-7KMfxgnzxhr_0bIK7ZVZQ"
             alt=""
             width={50}
           />
